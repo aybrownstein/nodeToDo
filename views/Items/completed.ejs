@@ -1,0 +1,24 @@
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category Name</th>
+            <th>Completed Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let i= 0; i < completedItems.length; i++) { %>
+            <tr>
+                <td>
+                    <%= completedItems[i].Title %>
+                </td>
+                <td>
+                    <%= completedItems[i].CategoryName %>
+                </td>
+                <td>
+                    <%= completedItems[i].CompletedDate %>
+                </td>
+            </tr>
+            <%}%>
+    </tbody>
+</table>
